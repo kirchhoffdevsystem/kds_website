@@ -1,0 +1,468 @@
+/* -------------------------------------------------- */
+/* styles.css */
+/* -------------------------------------------------- */
+
+:root {
+  --bg: #05060a;
+  --panel: #0f1720;
+  --accent: #0b66f0; /* azul */
+  --muted: #94a3b8;
+  --text: #e6eef6;
+  --glass: rgba(255, 255, 255, 0.03);
+}
+
+body[data-theme="light"] {
+  --bg: #f6f8fb;
+  --panel: #ffffff;
+  --accent: #0b66f0;
+  --muted: #4b5563;
+  --text: #0b1220;
+  --glass: rgba(11, 17, 32, 0.04);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  backdrop-filter: saturate(120%) blur(6px);
+  z-index: 60;
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.logo {
+  height: 44px;
+  width: auto;
+  filter: drop-shadow(0 6px 16px rgba(11, 102, 240, 0.16));
+}
+
+.brand-text {
+  font-weight: 700;
+  letter-spacing: .6px;
+}
+
+.brand-text small {
+  display: block;
+  font-weight: 600;
+  font-size: .6rem;
+  color: var(--muted);
+}
+
+.main-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: .4rem .6rem;
+  border-radius: 6px;
+}
+
+.main-nav a:hover {
+  color: var(--text);
+  background: var(--glass);
+}
+
+.controls {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: .4rem .6rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Hero */
+.hero {
+  padding: 4rem 0;
+  background: linear-gradient(180deg, rgba(11, 102, 240, 0.06), transparent 30%);
+}
+
+.hero-inner {
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 2.1rem;
+  margin: 0 0 .25rem;
+}
+
+.tagline {
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+.btn {
+  background: linear-gradient(90deg, var(--accent), #0060d1);
+  color: white;
+  padding: .6rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: var(--text);
+}
+
+/* Sections */
+.section {
+  padding: 2.5rem 0;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.about-visual .tech-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+/* Create PC */
+.pc-builder {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.options {
+  flex: 1;
+  display: grid;
+  gap: .75rem;
+}
+
+.options label {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.options select {
+  padding: .5rem;
+  border-radius: 8px;
+  background: var(--panel);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  color: var(--text);
+}
+
+.summary {
+  width: 320px;
+  background: var(--panel);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* Projects grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  background: var(--panel);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: .5rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Blog */
+.posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.post {
+  background: var(--panel);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Services */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.service-item {
+  background: var(--panel);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.socials a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.copyright {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+/* Responsive */
+@media (max-width: 880px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .posts {
+    grid-template-columns: 1fr;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .pc-builder {
+    flex-direction: column;
+  }
+}
+
+:root {
+  --bg: #000;
+  --navy: #0b1220;
+  --accent: #0b66f0;
+  --text: #e6eef6;
+  --muted: #94a3b8;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Cabeçalho */
+.site-header {
+  background: var(--navy);
+  padding: 1rem 0;
+  color: var(--text);
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  color: var(--accent);
+}
+
+.logo {
+  height: 44px;
+  border-radius: 8px;
+}
+
+.theme-toggle,
+.menu-toggle {
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  background: linear-gradient(180deg, var(--navy), #000);
+  color: white;
+}
+
+.hero-flex {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Seções */
+.section {
+  padding: 3rem 1rem;
+}
+
+.about-flex,
+.pc-flex,
+.footer-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-img .tech-card {
+  background: var(--navy);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* Crie seu PC */
+.summary {
+  background: var(--navy);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.price {
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+
+/* Rodapé */
+.site-footer {
+  background: var(--navy);
+  padding: 2rem 1rem;
+  color: var(--text);
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.copyright {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 1rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .about-flex,
+  .pc-flex,
+  .footer-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kirchhoff Dev System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-theme="dark">
+    <header class="site-header">
+      <div class="container header-flex">
+        <a href="#" class="brand">
+          <img src="IMG_20251023_144204.jpg" alt="Kirchhoff Dev System logo" class="logo" />
+          <span class="brand-text">
+          </span>
+        </a>
+
+        <nav class="main-nav" id="mainNav">
+          <a href="#sobre">Sobre Nós</a>
+          <a href="#criepc">Crie Seu PC</a>
+          <a href="#projects">Projetos</a>
+          <a href="#blog">Blog</a>
+          <a href="#services">Serviços</a>
+        </nav>
+
+        <div class="controls">
+          <button id="themeToggle" class="theme-toggle">🌙</button>
+          <button id="menuToggle" class="menu-toggle">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-flex">
+          <div>
+            <h1>Inovação e Tecnologia para o Futuro</h1>
+            <p class="tagline">
+              A Kirchhoff Dev System desenvolve soluções de software e sistemas inteligentes para impulsionar negócios.
+            </p>
+            <a href="#services"class="btn">Conheça nossos serviços</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="section">
+        <div class="container about-flex">
+          <div class="about-text">
+            <h2>Sobre Nós</h2>
+            <p>
+              Somos uma empresa especializada em tecnologia e desenvolvimento de sistemas sob medida. Nosso foco é entregar inovação, confiabilidade e excelência.
+            </p>
+          </div>
+          <div class="about-img">
+            <div class="tech-card">💡 Soluções modernas e eficientes</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="criepc" class="section">
+        <div class="container">
+          <h2>Crie Seu PC</h2>
+          <div class="pc-flex">
+            <div class="options">
+              <label>Processador
+                <select id="cpuSelect">
+                  <option value="1000">Intel i5</option>
+                  <option value="1500">Intel i7</option>
+                  <option value="2000">AMD Ryzen 7</option>
+                </select>
+              </label>
+              <label>Placa de vídeo
+                <select id="gpuSelect">
+                  <option value="1800">RTX 3060</option>
+                  <option value="2500">RTX 4070</option>
+                  <option value="3500">RTX 4090</option>
+                </select>
+              </label>
+              <label>Memória RAM
+                <select id="ramSelect">
+                  <option value="400">8GB</option>
+                  <option value="800">16GB</option>
+                  <option value="1200">32GB</option>
+                </select>
+              </label>
+              <label>Armazenamento
+                <select id="diskSelect">
+                  <option value="300">SSD 512GB</option>
+                  <option value="600">SSD 1TB</option>
+                  <option value="1000">SSD 2TB</option>
+                </select>
+              </label>
+              <button id="calcBtn" class="btn">Calcular Preço</button>
+            </div>
+            <div class="summary">
+              <h3>Resumo</h3>
+              <p id="pcSummary">Escolha as configurações para ver o total.</p>
+              <p class="price" id="pcPrice">R$0,00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Projects -->
+  <section id="projects" class="container section projects">
+    <h2>Projetos</h2>
+    <div class="grid" id="projectsGrid">
+      <article class="project-card">
+        <h3>Sistema ERP Personalizado</h3>
+        <p>Solução de gestão integrada para média empresa com módulos financeiros e estoque.</p>
+        <a href="#" class="card-link">Ver mais</a>
+      </article>
+      <article class="project-card">
+        <h3>App Mobile de Vendas</h3>
+        <p>Aplicativo multiplataforma para gestão de vendedores externos e catálogos.</p>
+        <a href="#" class="card-link">Ver mais</a>
+      </article>
+      <article class="project-card">
+        <h3>Plataforma de Integração</h3>
+        <p>APIs seguras e automações para integrar sistemas legados.</p>
+        <a href="#" class="card-link">Ver mais</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="container section blog">
+    <h2>Blog</h2>
+    <div class="posts">
+      <article class="post">
+        <h4>Como escolher arquitetura para startups</h4>
+        <p>Boas práticas para começar com base sólida e escalar com segurança.</p>
+        <a href="#" class="card-link">Ler post</a>
+      </article>
+      <article class="post">
+        <h4>Automação de testes: por onde começar</h4>
+        <p>Ferramentas e estratégias para reduzir bugs e acelerar entregas.</p>
+        <a href="#" class="card-link">Ler post</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="container section services">
+    <h2>Serviços</h2>
+    <div class="service-list">
+      <div class="service-item">
+        <h3>Desenvolvimento Sob Medida</h3>
+        <p>Aplicações web, mobile e sistemas corporativos adaptados ao seu negócio.</p>
+      </div>
+      <div class="service-item">
+        <h3>Consultoria em TI</h3>
+        <p>Avaliação, estratégia e roadmap tecnológico para sua empresa.</p>
+      </div>
+      <div class="service-item">
+        <h3>Integrações & APIs</h3>
+        <p>Conecte seus sistemas com segurança e desempenho.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+      <div class="container footer-flex">
+        <div>
+          <h3>Contato</h3>
+          <p>Email: contato@kirchhoffdev.com</p>
+          <p>Telefone: (11) 99999-9999</p>
+        </div>
+        <div class="socials">
+          <h3>Siga-nos</h3>
+          <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
+        </div>
+      </div>
+      <p class="copyright">© <span id="year"></span> Kirchhoff Dev System. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
