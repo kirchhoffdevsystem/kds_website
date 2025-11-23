@@ -11,8 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Toggle para abrir/fechar o menu
     menuToggle.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-        console.log(navLinks);
-        
+        navLinks.classList.toggle('active');        
     });
 });
