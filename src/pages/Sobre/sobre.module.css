@@ -1,0 +1,75 @@
+.btn-nav {
+    background: #29C7F2;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* ===== SOBRE ===== */
+.sobre {
+    padding: 60px 50px;
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.texto {
+    flex: 2;
+    min-width: 300px;
+}
+
+.texto h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.texto h2 {
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+.texto p {
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+.texto ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.texto ul li {
+    margin-bottom: 6px;
+}
+
+/* ===== IMAGEM ===== */
+.imagem {
+    flex: 1;
+    min-width: 260px;
+    text-align: center;
+}
+
+.imagem img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 12px #00000020;
+}
+
+.imagem span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #1A2C4A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

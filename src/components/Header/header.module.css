@@ -1,0 +1,84 @@
+.header-navbar{
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background: #1A2C4A;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+nav a {
+  margin-left: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav .navlinkAtivo {
+  text-decoration: underline;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background: #29C7F2 !important;
+}
+
+/* Estilos do menu colapsado */
+
+.nav-links {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  background-color: #333;
+}
+
+.nav-links li a {
+  display: inherit !important;
+  color: white;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 668px) {
+
+  .header-navbar>nav a:not(.btn-nav) {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links.active {
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .header-navbar {
+    padding: 20px 30px;
+  }
+}

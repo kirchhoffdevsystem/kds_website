@@ -1,0 +1,86 @@
+/* ===== HERO ===== */
+.hero {
+    height: 90vh;
+    background: linear-gradient(#00000090, #00000090), url("https://images.unsplash.com/photo-1555066931-4365d14bab8c");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn-cta {
+    background: #29C7F2;
+    padding: 12px 22px;
+    border-radius: 6px;
+    color: #1A2C4A;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* ===== SEÇÕES ===== */
+section {
+    padding: 60px 50px;
+}
+
+/* ===== SERVIÇOS ===== */
+.servicos h2, .sobre h2, .depoimentos h2, .contato h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00000010;
+    width: 300px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* ===== SOBRE ===== */
+.sobre p {
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ===== DEPOIMENTOS ===== */
+.depoimentos .card {
+    width: 350px;
+    font-style: italic;
+}
+
+/* ===== CONTATO ===== */
+.contato {
+    text-align: center;
+}
+
+.contato p {
+    margin-bottom: 20px;
+}
