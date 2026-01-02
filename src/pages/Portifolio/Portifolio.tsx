@@ -42,9 +42,9 @@ export default function Portifolio_Page() {
                 <h1>Portfólio & Projetos</h1>
                 <p>Confira alguns dos projetos demonstrativos e protótipos desenvolvidos pela Kirchhoff Dev System.</p>
             </section>
-            <section className="projetos">
+            <section className={css.projetos}>
                 {projetos.map((el: Projetos, i: number) => (
-                    <div className="projeto" key={i}>
+                    <div className={css.projeto} key={i}>
                         <img src={el.img} alt={el.alt} />
                         <h2>{el.titulo}</h2>
                         <p>{el.descricao}</p>
